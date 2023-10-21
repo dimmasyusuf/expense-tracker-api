@@ -1,0 +1,28 @@
+{
+  "expenses": [
+    {
+      "id": 1,
+      "name": "KFC",
+      "price": 10,
+      "category": "Food",
+      "createdAt": "2023-10-21T17:23:40.957Z",
+      "updatedAt": "2023-10-21T17:23:40.957Z"
+    },
+    {
+      "id": 2,
+      "name": "AW",
+      "price": 15,
+      "category": "Food",
+      "createdAt": "2023-10-21T17:23:59.353Z",
+      "updatedAt": "2023-10-21T17:23:59.353Z"
+    },
+    {
+      "id": 3,
+      "name": "Sushi",
+      "price": 20,
+      "category": "Food",
+      "createdAt": "2023-10-21T17:28:14.060Z",
+      "updatedAt": "2023-10-21T17:28:35.849Z"
+    }
+  ]
+}
