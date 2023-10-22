@@ -5,12 +5,14 @@ const axios = require('axios');
 const API_URL = 'http://localhost:6000/';
 
 router.get('/', async (req, res) => {
-  const { category } = req.query;
+  const { category, start_date, end_date } = req.query;
 
   try {
     const expenses = await axios.get(API_URL + 'expenses', {
       params: {
         category,
+        createdAt_gte: start_date,
+        createdAt_lte: end_date,
       },
     });
 
