@@ -23,6 +23,14 @@
       "category": "Food",
       "createdAt": "2023-10-21T17:28:14.060Z",
       "updatedAt": "2023-10-21T17:28:35.849Z"
+    },
+    {
+      "id": 4,
+      "name": "Buy CS:GO Skins",
+      "price": 100,
+      "category": "Game",
+      "createdAt": "2023-10-22T01:30:13.771Z",
+      "updatedAt": "2023-10-22T01:30:13.771Z"
     }
   ]
 }
