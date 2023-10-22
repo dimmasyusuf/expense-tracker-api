@@ -113,4 +113,35 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
+router.get('/categories/:category', async (req, res) => {
+  const {category} = req.params;
+  
+  try {
+    const expenses = await axios.get(API_URL + 'expenses');
+    const filteredExpenses = expenses.data.map((expense) => {
+      if (expense.category === category) {
+        return expense;
+      } else {
+        return res.status(404).send({
+          status: 404,
+          message: 'Expense not found',
+          data: {},
+        })
+      }
+    })
+
+    return res.status(200).send({
+      status: 200,
+      message: 'Successfully fetched expenses',
+      data: filteredExpenses,
+    })
+  } catch (err) {
+    return res.status(500).send({
+      status: 500,
+      message: 'Failed to fetch expenses',
+      data: {},
+    })
+  }
+})
+
 module.exports = router;
